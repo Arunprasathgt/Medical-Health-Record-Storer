@@ -3,55 +3,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-dark text-white">
     <center>
         <br>
         <br>
-    <h1><u><b>Welcome To Patient Papers</b></u></h1>
-    <marquee><b>Please fill in this form to create an account.</b> </marquee><br>
+              <h1 class="display-4">Welcome to Patient Papers</h1>
+              Please fill in this form to create an account 
 
    
     
        <fieldset>
         <form action="#" method="post">
+           
             <table>
             <tr>
-                <td>User name:<input type="text" placeholder="Enter your name" name="name"></td>
+                <td>User name:<div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Middle name" aria-label="Middle name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                  </div></td>
             </tr>
             <tr>
-                <td> User ID:<input type="text" placeholder="Enter your ID" name="User ID"></td>
+                <td> User ID:<input class="form-control" type="text" placeholder="Enter the user ID" aria-label="user name"></td>
             </tr>
             <tr>
-                <td>Mobile Number:<input type="number" placeholder="Enter the number"> </td>
+                <td>Mobile Number<input class="form-control" type="text" placeholder="Enter your Mobile Number" aria-label="Mobile Number"> </td>
             </tr>
+            <div>
             <tr>
+                
                 <td>Gender:
                 
-                   <input type="radio"  id="male" name="gender" value="male">Male
-                   <input type="radio" id="Female" name="gender" value="Female">Female
-                    <input type="radio" id="others" name="gender" value="others">Others
+                   <input class="form-check-input" type="radio" name="Gender" id="flexRadioDefault1" value="male">Male
+                   <input class="form-check-input" type="radio" name="Gender" id="flexRadioDefault2" value="Female">Female
+                   <input class="form-check-input" type="radio" name="Gender" id="flexRadioDefault3" value="others">Others
                 </td>
+            
             </tr>
-             <td>Email:<input type="email"  placeholder="Enter email" name="email"></td>
+        </div>
+             <td>Email:<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></td>
             </tr>
             <tr>
-                <td>Password:<input type="password"  placeholder="Enter password" name="password"></td>
+                <td>Password:<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                    <div id="passwordHelpBlock" class="form-text">
+                      Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                    </div></td><br>
              </tr>
              <tr>
-                <td>Conform Password:<input type="password"  name="CFPassword" ></td>
+                <td>Conform Password:<input type="password" id="inputPassword5" class="form-control"  name="CFPassword" ></td>
              </tr>
             </table>
         </form>
     
     <p> By creating an account you're  agree to our<br>
+        
     <p><input type="checkbox"><a href="./About us.html" >Terms & Conditions?</a></p>
-    <a href="./home.html"><button type="submit">Register</button></a>
+    <div class="btn btn-warning">
+    <a href="./home.html" ><button type="button" class="btn btn-warning">Register</button></a>
+</div>
      <div>
         <p> Already have an account?<a href="./login.html">Login</a></p>
      </div>
     </fieldset>
+    
     </center>
 </body>
 </html>
